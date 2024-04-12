@@ -1,3 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: auto;
+}
 body {
     background-color: #1e1e1e;
     margin: 50px;
@@ -10,6 +16,8 @@ body {
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
+    color: #ffffff;
+    text-align: right;
 }
 h1 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -31,7 +39,12 @@ h3 {
     font-variant: small-caps;
     font-size:xx-large;
     font-style:oblique;
-    margin-left: 30px
+    margin-left: 30px;
+    text-align: left;
+}
+.ol {
+display: flex;
+text-align: center;
 }
 .box {
    Border: 5px solid;
@@ -42,14 +55,60 @@ h3 {
    justify-content: center;
    align-items: center;
    margin:auto;
+   text-align: center;
+   border-radius: 15px;
    
 }
 #box1 {
-    background-color: rgb(35, 44, 44);
+    background-color: rgb(20, 60, 60);
 }
 #box2 {
-  background-color: rgb(62, 71, 68);
+  background-color: rgb(14, 63, 54);
     margin:auto;
+}
+#box3 {
+    background-color: rgb(12, 62, 66);
+      margin:auto;
+  }
+#box4 {
+    background-color: rgb(29, 52, 87);
+      margin:auto;
+  }
+#box5 {
+    background-color: rgb(17, 70, 46);
+      margin:auto;
+  }
+#box6 {
+    background-color: rgb(16, 68, 31);
+      margin:auto;
+}
+#box7 {
+    background-color: rgb(17, 55, 13);
+      margin:auto;
+}
+#box8 {
+    background-color: rgb(51, 74, 56);
+      margin:auto;
+}
+#box9 {
+    background-color: rgb(42, 63, 43);
+      margin:auto;
+}
+#box10 {
+    background-color: rgb(57, 53, 75);
+      margin:auto;
+}
+#box11 {
+    background-color: rgb(70, 60, 95);
+      margin:auto;
+}
+#box12 {
+    background-color: rgb(82, 51, 86);
+      margin:auto;
+}
+#box13 {
+    background-color: rgb(82, 46, 71);
+      margin:auto;
 }
 a {
     font-family: Arial, Helvetica, sans-serif;
