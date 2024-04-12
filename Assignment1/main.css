@@ -51,10 +51,10 @@ h3 {
    width: auto;
    height:auto;
    display: flex;
-   justify-content: auto;
-   align-items: auto;
+   justify-content: flex-start;
+   align-items: left;
    margin: auto;
-   text-align: auto;
+   text-align: left;
    border-radius: 15px;
    padding: 25px;
 
