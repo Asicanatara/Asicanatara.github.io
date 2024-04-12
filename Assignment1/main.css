@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: auto;
+    padding: 15px;
     flex-wrap: wrap;
 }
 body {
@@ -44,15 +44,17 @@ h3 {
     margin-left: 30px;
     text-align: left;
 }
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .box {
    Border: 5px solid;
    font-size: 5em;
    width: auto;
    height:auto;
    display: flex;
-   justify-content: flex-start;
    align-items: left;
-   margin: auto;
+   margin: 15px;
    text-align: left;
    border-radius: 15px;
    padding: 25px;
@@ -111,7 +113,4 @@ h3 {
 #box14 {
     background-color: rgb(10, 15, 14);
       
-}
-a {
-    font-family: Arial, Helvetica, sans-serif;
 }
