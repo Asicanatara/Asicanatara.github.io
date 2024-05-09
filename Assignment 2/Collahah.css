@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.gallery {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.images {
+  display: inline-block;
+}
+
+.images img {
+  width: 100%; /* Ensure images take full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block; /* Display images in a row */
+}
