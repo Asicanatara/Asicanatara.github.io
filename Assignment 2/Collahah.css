@@ -1,21 +1,32 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
 }
 
-.gallery {
+.carousel-inner {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel img {
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent line breaks */
+  transition: transform 0.5s ease;
 }
 
-.images {
-  display: inline-block;
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
 }
 
-.images img {
-  width: 100%; /* Ensure images take full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  display: inline-block; /* Display images in a row */
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }

@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Horizontal Scroll Gallery with Audio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="gallery">
-      <div class="images">
-        <div class="image-container">
-          <img
-            src="artworks-000114892232-4xlmgt-t500x500.jpg"
-            alt="Image 1"
-            data-audio="audio1.mp3"
-          />
-          <audio src="audio1.mp3" id="audio1"></audio>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel with Individual Sounds</title>
+    <link rel="stylesheet" href="Collahah.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <img src="Humanity.png" alt="Humanity">
+            <button class="play" data-audio="sound1.mp3">▶</button>
+            
+            <img src="Live.png" alt="Empire of Angels">
+            <button class="play" data-audio="sound2.mp3">▶</button>
+            
+            <img src="Battlecry.png" alt="Victory">
+            <button class="play" data-audio="Victory">▶</button>
+
+            <img src="Unleashed.png" alt="Never Give Up On Your Dreams">
+            <button class="play" data-audio="Victory">▶</button>
+          
         </div>
-        <div class="image-container">
-          <img
-            src="Live_-_An_Epic_Music_Experience.webp"
-            alt="Image 2"
-            data-audio="audio2.mp3"
-          />
-          <audio src="audio2.mp3" id="audio2"></audio>
-        </div>
-        <div class="image-container">
-          <img src="I.jpeg" alt="Image 3" data-audio="audio3.mp3" />
-          <audio src="audio3.mp3" id="audio3"></audio>
-        </div>
-        <div class="image-container">
-          <img
-            src="TSFH_Unleashed_Steven_R._Gilmore.png"
-            alt="Image 3"
-            data-audio="audio3.mp3"
-          />
-          <audio src="audio3.mp3" id="audio3"></audio>
-        </div>
-      </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <audio id="audio1" src="sound1.mp3"></audio>
+    <audio id="audio2" src="sound2.mp3"></audio>
+    <audio id="Victory" src="Two Steps From Hell - Victory.mp3"></audio>
+   
+    
+    <script src="nonsense.js"></script>
+</body>
 </html>
