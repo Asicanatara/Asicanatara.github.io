@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Get elements
+    // Getting the elements
     const $ = (s) => document.querySelector(s);
     const container = $(".media-player");
     const videoElement = $("video");

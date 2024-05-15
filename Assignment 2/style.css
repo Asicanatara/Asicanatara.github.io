@@ -23,11 +23,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: url(Wack.jpeg);
+    background-image: url(Wacky\ backdrop.png);
+    background-repeat: no-repeat;
   }
   
   
-  
+  h2 {
+    size: 20rem;
+    color: #d9d980;
+  }
   
   .container {
     max-width: 1000px;
@@ -39,10 +43,10 @@
   header {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    padding: 10px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
     width: 100%;
-    text-wrap: balance;
     background-image: url(Wack.jpeg)
   }
   
