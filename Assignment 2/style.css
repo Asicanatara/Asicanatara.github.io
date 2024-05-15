@@ -6,31 +6,13 @@
     --main-btn-bg-color: #602323;
   }
   
-  body,
-  h1,
-  p,
+ 
+
   ul {
     margin: 0;
     padding: 0;
   }
   
-  .box {
-    Border: 2px solid;
-    font-size: 1em;
-    width: 90rem;
-    height:auto;
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    text-align: center;
-    border-radius: 15px;
-    padding: 15px;
-
-  }
-
-  #box1 {
-    background-color: rgb(163, 39, 1);
-  }
   
   body {
     font-family: "Arial", sans-serif;
@@ -41,30 +23,34 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-image: url(Wack.jpeg);
   }
   
-  /* Add additional styles as needed */
   
-  /* Create a container for the main content */
+  
+  
   .container {
     max-width: 1000px;
     width: 100%;
     padding: 20px;
   }
   
-  /* Header styling */
+ 
   header {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     padding: 10px 0;
     text-align: center;
     width: 100%;
+    text-wrap: balance;
+    background-image: url(Wack.jpeg)
   }
   
-  /* Navigation styling */
+ 
   nav {
     margin-top: 20px;
     text-align: center;
+    background-color: #3c3b3b;
   }
   
   nav ul {
@@ -82,7 +68,7 @@
     color: var(--text-color);
   }
   
-  /* Media player styling */
+  
   .media-player {
     width: 100%;
     margin: 0 auto;
@@ -128,7 +114,7 @@
     transition: width 0.3s ease;
   }
   
-  /* Footer styling */
+  
   footer {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
@@ -145,7 +131,7 @@
 
 a {
   text-decoration: none;
-  color: blue;
+  color: rgb(255, 0, 0);
 }
 
 video {
@@ -184,12 +170,12 @@ nav ul {
   color: white;
   gap: 1em;
 }
-
+/* Click to play text*/
 [is-playing] .initial-controls {
   opacity: 0;
   pointer-events: none;
 }
-
+/* creates a large clickable circle in the inner media player */
 .large-circle-button {
   width: 80px;
   height: 80px;
@@ -201,35 +187,14 @@ nav ul {
   transition: all 0.3s;
   cursor: pointer;
 }
-
+/* When hovering the button shrinks in scale by .95*/
 .large-circle-button:hover {
   scale: 0.95;
 }
 
+/* This acts as a transition so the play button disappears and scales up after being pressed */
 [is-playing] .large-circle-button {
   opacity: 0;
   scale: 4;
 }
 
-.sticky-image {
- 
-  position: sticky;
-  top: 10px; /* Adjust this value based on how far from the top you want the images to stick */
-  width: 150px; /* Adjust the width of the sticky images as needed */
-  height: auto;
-}
-
-.sticky-image img {
-  width: 100%;
-  height: auto;
-}
-
-.left {
-  left: 0;
-  margin-left: 20px;
-}
-
-.right {
-  right: 0;
-  margin-right: 20px;
-}
