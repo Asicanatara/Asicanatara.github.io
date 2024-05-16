@@ -1,3 +1,10 @@
+/* https://www.youtube.com/watch?v=zHZRFwWQt2w
+Kevin Powell had some major influence on this webpage */
+
+/* For the overall design I wanted to keep it somewhat simple yet very distinguisable.
+Using the premade CSS script I incorporated my own adaptations and alterations to create a more game design friendly aspect
+This was done using images as background with a "Background-image" element and a "background-position" alteration so that it would fit nice and easily on the page.
+As for the colour scheme I used a white and goldish hue on each of the text fonts.*/
 :root {
   --primary-bg-color: #887e7e;
   --text-color: #000000;
@@ -23,6 +30,7 @@ body {
   background-image: url(Wacky\ backdrop.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: auto;
 }
 
 h1 {
@@ -82,11 +90,12 @@ nav a {
 .media-player {
   width: 100%;
   flex-shrink: 0;
-  /* margin: 0 auto; */
+  margin: auto;
 }
 
 .media-player video {
   max-width: 100%;
+  position: sticky;
 }
 
 .custom-controls {
