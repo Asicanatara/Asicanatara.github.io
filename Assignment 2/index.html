@@ -3,15 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <script defer src="script.js"></script>
-
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Valorant Championships Tour</h1>
+      <h1>Valorant Championship Tour (VCT)</h1>
     </header>
 
     <!-- navigation to the homepage (The assignment) and the original play Valorant site-->
@@ -24,134 +21,131 @@
       </ul>
     </nav>
 
-<!-- Main class container-->
+    <!-- Main class container-->
     <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
-        <video id="TickingAway" >
-          <source
-            src="TickingAway.mp4"
-            type="video/mp4"
-          />
+        <video id="TickingAway">
+          <source src="TickingAway.mp4" type="video/mp4" />
         </video>
+        <!--naming this initial controls as this is the primary source of function I'd like in this project-->
         <div class="initial-controls">
-          
+          <!-- A large circle button that will feature in the center of the media player-->
           <div class="large-circle-button">
             <img
-          id="play-pause-img"
-          src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-          alt="Play Button"
-          width="40"
-          height="40"
-        />
+              id="play-pause-img"
+              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+              alt="Play Button"
+              width="40"
+              height="40"
+            />
           </div>
-        Click to play
+          <p>Click to view cinematic</p>
         </div>
-      
       </div>
 
       <!-- Additional Content Section -->
-      
-      <div href=""></div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+
       <!-- creating a split area for lyrics of the music video-->
-      <section>
+      <section class="lyrics">
         <h2>Lyrics</h2>
-        <p>
+        <div class="box" id="expandableBox">
+          <p>
             <!-- br aria-hidden creates a hidden barrier between the sentences without creating a large gap.-->
             <span>I need to keep you around, with my feet tied </span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>With my feet tied tight to the ground</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>The end's nowhere to be found, I don't know why</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>You don't leave me to drown, oh, oh, oh</span>
-            <br aria-hidden="true">
-        
+            <br aria-hidden="true" />
+
             <span>Don't know where to go unless you say</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>Don't know what to do unless you stay</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>Thinking that today will be our day</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>Be our day again</span>
-            <br aria-hidden="true">
-       
+            <br aria-hidden="true" />
+            <br />
+
             <span> Why am I playing with time as it's ticking away?</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span> It's tickin' away, away, I'm asking</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span> Why we run for our lives, not a second to waste?</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span> You're tickin' away, away, away</span>
-            <br aria-hidden="true">
-       
-
-        
+            <br aria-hidden="true" />
+            <br />
             <span>Alright, let's get it</span>
-            <br aria-hidden="true">
-            <span> Winnin' (winnin'), losin' (losin'), either way I'm there</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
+            <span>
+              Winnin' (winnin'), losin' (losin'), either way I'm there</span
+            >
+            <br aria-hidden="true" />
             <span>Gotta attitude, I'm out the roof up in the air</span>
-            <br aria-hidden="true">
-            <span> This round I make it count, yeah, I'm talkin' right now</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
+            <span>
+              This round I make it count, yeah, I'm talkin' right now</span
+            >
+            <br aria-hidden="true" />
             <span>Feel like the comeback kid, I got no time to spare</span>
-            <br aria-hidden="true">
-        
+            <br aria-hidden="true" />
+            <br />
             <span>Woah, double up the score, turn a two to a four</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>You know I win a lot, gotta win one more</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>On a hot streak, never gets old</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>Solo with the ace, and my team went gold</span>
-            <br aria-hidden="true">
-       
+            <br aria-hidden="true" />
+            <br />
             <span>Why am I playing with time as it's ticking away?</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>It's tickin' away, away, I'm asking</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>Why we run for our lives, not a second to waste?</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>You're tickin' away, away, away</span>
-            <br aria-hidden="true">
-         
+            <br aria-hidden="true" />
+            <br />
             <span>You're ticking away, away, away</span>
-            <br aria-hidden="true">
-        
+            <br aria-hidden="true" />
+            <br />
             <span>You're ticking away, away</span>
-            <br aria-hidden="true">
-
+            <br aria-hidden="true" />
+            <br />
             <span>I'll give it one more try</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>I don't know why, but I keep coming back every time</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>I want it more than my life</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>I don't know why, but it feels so right</span>
-            <br aria-hidden="true">
-
+            <br aria-hidden="true" />
+            <br />
             <span>Why am I playing with time as it's ticking away?</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>It's tickin' away, away, I'm asking</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>Why we run for our lives, not a second to waste?</span>
-            <br aria-hidden="true">
+            <br aria-hidden="true" />
             <span>It's tickin' away, away, away</span>
-            <br aria-hidden="true">
-
+            <br aria-hidden="true" />
+            <br />
             <span>It's ticking away, away, away</span>
-            <br aria-hidden="true">
-
+            <br aria-hidden="true" />
+            <br />
             <span>Ticking away, away, away</span>
-            <br aria-hidden="true">
-        </p>
+            <br aria-hidden="true" />
+          </p>
+        </div>
       </section>
+      <section><img src="Jett.png" alt="" /></section>
     </main>
 
     <!-- Footer Section -->
@@ -162,7 +156,6 @@
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
       <a href="https://icons8.com">Icons8</a>
     </footer>
-
-
+    <script defer src="script.js"></script>
   </body>
 </html>
