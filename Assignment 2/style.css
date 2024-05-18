@@ -36,11 +36,18 @@ body {
 h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+    
 }
 
 h2 {
   size: 20rem;
   color: #d9d980;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    color: #d9d980;
 }
 
 .container {
@@ -235,4 +242,9 @@ nav ul {
 
 p {
   color: #fdf1ab;
+}
+
+.modal {
+  padding: 1em;
+  max-width: 50px;
 }

@@ -1,3 +1,8 @@
+const videoList = [
+  { name: "Ticking Away - Valorant, bbno$ and Grabbitz", link: "TickingAway.mp3" },
+  { name: "Die For You - Valorant and Grabbitz", link: "DieForYou.mp4" },
+];
+
 document.addEventListener("DOMContentLoaded", function (event) {
   // Getting the elements
   const $ = (s) => document.querySelector(s);
@@ -5,7 +10,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const container = $(".media-player");
   const videoElement = $("video");
   const largePlay = $(".large-circle-button");
-
+  const videoName = $("#video-name");
+  const myVideo = $("#my-video");
+  const videoTime = $("#video-time");
+  const progressBar = $("#progress-bar-fill");
   console.log(container);
 
   // large play is the defined term I used to describe the giant play button on the screen.
@@ -44,19 +52,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
   };
 });
 
-video.addEventListener("timeupdate", updateProgressBar);
-
-function updateProgressBar() {
-  const progressBarFill = $("#progress-bar-fill");
-  const progress = (video.currentTime / video.duration) * 100;
-  console.log(progress);
-  progressBarFill.style.width = progress + "%";
+function playVideo(no) {
+  myVideo.src = videoList[no].link;
+  videoName.textContent = videoList[no].name;
+  // myVideo.load();
+  // myVideo.play();
 }
 
-const box = document.getElementById("box1");
 
-box.addEventListener("click", function () {
-  this.classList.toggle("expand");
-});
+const modal = $("#modal")
+const openModal = $(".open-button")
+const closeModal = $(".close-button")
 
-if (box == "expand");
+openmodel.addEventListener('click', () => {
+  modal.showModal();
+})
+

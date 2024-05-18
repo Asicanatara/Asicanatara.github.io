@@ -55,110 +55,115 @@ To achieve this I went with a flex layout and and a sticky key function to keep 
         <div class="progress-bar">
           <span id="progress-bar-fill"></span>
         </div>
+        <h3>Now Playing: <span id="video-name"></span></h3>
       </div>
 
       <!-- Additional Content Section -->
 
       <!-- creating a split area for lyrics of the music video-->
       <section class="lyrics">
-        <div class="box" id="Box1">
+        <button class = "button open-button">Lyrics</button>
+        <dialog class ="modal" id="modal">
+            <p>
+              <!-- br aria-hidden creates a hidden barrier between the sentences without creating a large gap.-->
+              <span>I need to keep you around, with my feet tied </span>
+              <br aria-hidden="true" />
+              <span>With my feet tied tight to the ground</span>
+              <br aria-hidden="true" />
+              <span>The end's nowhere to be found, I don't know why</span>
+              <br aria-hidden="true" />
+              <span>You don't leave me to drown, oh, oh, oh</span>
+              <br aria-hidden="true" />
+  
+              <span>Don't know where to go unless you say</span>
+              <br aria-hidden="true" />
+              <span>Don't know what to do unless you stay</span>
+              <br aria-hidden="true" />
+              <span>Thinking that today will be our day</span>
+              <br aria-hidden="true" />
+              <span>Be our day again</span>
+              <br aria-hidden="true" />
+              <br />
+  
+              <span> Why am I playing with time as it's ticking away?</span>
+              <br aria-hidden="true" />
+              <span> It's tickin' away, away, I'm asking</span>
+              <br aria-hidden="true" />
+              <span> Why we run for our lives, not a second to waste?</span>
+              <br aria-hidden="true" />
+              <span> You're tickin' away, away, away</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>Alright, let's get it</span>
+              <br aria-hidden="true" />
+              <span>
+                Winnin' (winnin'), losin' (losin'), either way I'm there</span
+              >
+              <br aria-hidden="true" />
+              <span>Gotta attitude, I'm out the roof up in the air</span>
+              <br aria-hidden="true" />
+              <span>
+                This round I make it count, yeah, I'm talkin' right now</span
+              >
+              <br aria-hidden="true" />
+              <span>Feel like the comeback kid, I got no time to spare</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>Woah, double up the score, turn a two to a four</span>
+              <br aria-hidden="true" />
+              <span>You know I win a lot, gotta win one more</span>
+              <br aria-hidden="true" />
+              <span>On a hot streak, never gets old</span>
+              <br aria-hidden="true" />
+              <span>Solo with the ace, and my team went gold</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>Why am I playing with time as it's ticking away?</span>
+              <br aria-hidden="true" />
+              <span>It's tickin' away, away, I'm asking</span>
+              <br aria-hidden="true" />
+              <span>Why we run for our lives, not a second to waste?</span>
+              <br aria-hidden="true" />
+              <span>You're tickin' away, away, away</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>You're ticking away, away, away</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>You're ticking away, away</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>I'll give it one more try</span>
+              <br aria-hidden="true" />
+              <span>I don't know why, but I keep coming back every time</span>
+              <br aria-hidden="true" />
+              <span>I want it more than my life</span>
+              <br aria-hidden="true" />
+              <span>I don't know why, but it feels so right</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>Why am I playing with time as it's ticking away?</span>
+              <br aria-hidden="true" />
+              <span>It's tickin' away, away, I'm asking</span>
+              <br aria-hidden="true" />
+              <span>Why we run for our lives, not a second to waste?</span>
+              <br aria-hidden="true" />
+              <span>It's tickin' away, away, away</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>It's ticking away, away, away</span>
+              <br aria-hidden="true" />
+              <br />
+              <span>Ticking away, away, away</span>
+              <br aria-hidden="true" />
+              </p>
+        </dialog>
+        <button class = "button close-button">Close</button>
           <h2>Lyrics</h2>
-          <p>
-            <!-- br aria-hidden creates a hidden barrier between the sentences without creating a large gap.-->
-            <span>I need to keep you around, with my feet tied </span>
-            <br aria-hidden="true" />
-            <span>With my feet tied tight to the ground</span>
-            <br aria-hidden="true" />
-            <span>The end's nowhere to be found, I don't know why</span>
-            <br aria-hidden="true" />
-            <span>You don't leave me to drown, oh, oh, oh</span>
-            <br aria-hidden="true" />
-
-            <span>Don't know where to go unless you say</span>
-            <br aria-hidden="true" />
-            <span>Don't know what to do unless you stay</span>
-            <br aria-hidden="true" />
-            <span>Thinking that today will be our day</span>
-            <br aria-hidden="true" />
-            <span>Be our day again</span>
-            <br aria-hidden="true" />
-            <br />
-
-            <span> Why am I playing with time as it's ticking away?</span>
-            <br aria-hidden="true" />
-            <span> It's tickin' away, away, I'm asking</span>
-            <br aria-hidden="true" />
-            <span> Why we run for our lives, not a second to waste?</span>
-            <br aria-hidden="true" />
-            <span> You're tickin' away, away, away</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>Alright, let's get it</span>
-            <br aria-hidden="true" />
-            <span>
-              Winnin' (winnin'), losin' (losin'), either way I'm there</span
-            >
-            <br aria-hidden="true" />
-            <span>Gotta attitude, I'm out the roof up in the air</span>
-            <br aria-hidden="true" />
-            <span>
-              This round I make it count, yeah, I'm talkin' right now</span
-            >
-            <br aria-hidden="true" />
-            <span>Feel like the comeback kid, I got no time to spare</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>Woah, double up the score, turn a two to a four</span>
-            <br aria-hidden="true" />
-            <span>You know I win a lot, gotta win one more</span>
-            <br aria-hidden="true" />
-            <span>On a hot streak, never gets old</span>
-            <br aria-hidden="true" />
-            <span>Solo with the ace, and my team went gold</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>Why am I playing with time as it's ticking away?</span>
-            <br aria-hidden="true" />
-            <span>It's tickin' away, away, I'm asking</span>
-            <br aria-hidden="true" />
-            <span>Why we run for our lives, not a second to waste?</span>
-            <br aria-hidden="true" />
-            <span>You're tickin' away, away, away</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>You're ticking away, away, away</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>You're ticking away, away</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>I'll give it one more try</span>
-            <br aria-hidden="true" />
-            <span>I don't know why, but I keep coming back every time</span>
-            <br aria-hidden="true" />
-            <span>I want it more than my life</span>
-            <br aria-hidden="true" />
-            <span>I don't know why, but it feels so right</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>Why am I playing with time as it's ticking away?</span>
-            <br aria-hidden="true" />
-            <span>It's tickin' away, away, I'm asking</span>
-            <br aria-hidden="true" />
-            <span>Why we run for our lives, not a second to waste?</span>
-            <br aria-hidden="true" />
-            <span>It's tickin' away, away, away</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>It's ticking away, away, away</span>
-            <br aria-hidden="true" />
-            <br />
-            <span>Ticking away, away, away</span>
-            <br aria-hidden="true" />
-          </p>
+         
         </div>
       </section>
-      <section><img src="BBGEK.png" alt="StickyGek" /></section>
+      <section id="Gekk"><img src="BBGEK.png" alt="StickyGek" /></section>
     </main>
 
     <!-- Footer Section -->
