@@ -265,3 +265,38 @@ button:hover {
   flex-direction: column;
   gap: 1em;
 }
+.video-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-title h1 {
+  font-size: 1.2rem;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* width: 200px; */
+  flex: 1;
+}
+
+.video-container {
+  display: flex;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+}
+
+.video-container > video {
+  /* flex: 1; */
+  width: 75%;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+img {
+  cursor: pointer;
+}

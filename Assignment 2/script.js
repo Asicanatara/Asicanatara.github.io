@@ -4,29 +4,17 @@ const videoList = [
 ];
 
 let loop = false;
-//allows the media to be played
-document.addEventListener("DOMContentLoaded", function (event) {
+
 
   const container = document.querySelector(".media-player");
   const videoElement = document.querySelector("video");
   const largePlay = document.querySelector(".large-circle-button");
-  const videoName = document.querySelector("#video-name");
   const myVideo = document.querySelector("#TickingAway");
-  const videoTime = document.querySelector("#video-time");
-  const progressBar = document.querySelector("#progress-bar-fill");
   const firstVideoButton = document.querySelector("#first-video-btn");
-   const secondVideoButton = document.querySelector("#second-video-btn");
+  const videoTime = document.querySelector("#video-time")
+  const progressBar = document.querySelector("#progress-bar-fill");
   console.log(container);
 
-  firstVideoButton.addEventListener("click", function playIt() {
-    myVideo.pause();
-    playVideo(0);
-  });
- 
-secondVideoButton.addEventListener("click", function playIt() {
-  myVideo.pause();
-  playVideo(1);
-});
 
   myVideo.addEventListener("timeupdate", updateProgressBar);
  
@@ -65,11 +53,9 @@ secondVideoButton.addEventListener("click", function playIt() {
       }
     });
   };
+  function updateProgressBar() {
+    videoTime.textContent = myVideo.currentTime.toFixed(2);
+    const value = (myVideo.currentTime / myVideo.duration) * 100;
+    progressBar.style.width = value + "%";
+  }
 
-});
-
-function updateProgressBar() {
-  videoTime.textContent = myVideo.currentTime.toFixed(2);
-  const value = (myVideo.currentTime / myVideo.duration) * 100;
-  progressBar.style.width = value + "%";
-}
