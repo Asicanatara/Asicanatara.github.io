@@ -1,21 +1,24 @@
-const videoList = [
-  { name: "Ticking Away - Valorant, bbno$ and Grabbitz", link: "TickingAway.mp3" },
-  { name: "Die For You - Valorant and Grabbitz", link: "DieForYou.mp4" },
-];
-
-let loop = false;
-
-
+//defining the media player
   const container = document.querySelector(".media-player");
+
+  //defining the video
   const videoElement = document.querySelector("video");
+
+  //defining the circular button
   const largePlay = document.querySelector(".large-circle-button");
+
+  //defining the video
   const myVideo = document.querySelector("#TickingAway");
-  const firstVideoButton = document.querySelector("#first-video-btn");
+
+  //defining the video time
   const videoTime = document.querySelector("#video-time")
+
+  //defining the progress bar
   const progressBar = document.querySelector("#progress-bar-fill");
+
   console.log(container);
 
-
+//adding an event listener for the progress bar
   myVideo.addEventListener("timeupdate", updateProgressBar);
  
 
@@ -26,8 +29,10 @@ let loop = false;
 
     videoElement.play();
 
-    // Update the UI
 
+    //if you see this say hi at the start of your feedback <3
+    
+    // Update the UI
     container.setAttribute("is-playing", "true");
     videoElement.setAttribute("controls", "true");
 
@@ -52,6 +57,9 @@ let loop = false;
         videoElement.muted = !videoElement.muted;
       }
     });
+
+
+  //updates the Progress bar every millisecond the video plays
   };
   function updateProgressBar() {
     videoTime.textContent = myVideo.currentTime.toFixed(2);
