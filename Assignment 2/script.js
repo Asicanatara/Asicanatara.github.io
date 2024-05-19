@@ -3,18 +3,33 @@ const videoList = [
   { name: "Die For You - Valorant and Grabbitz", link: "DieForYou.mp4" },
 ];
 
+let loop = false;
+//allows the media to be played
 document.addEventListener("DOMContentLoaded", function (event) {
-  // Getting the elements
-  const $ = (s) => document.querySelector(s);
-  // writing this previous code allows me to write the rest of the script faster, instead of writing const ____ = document.querySelector("___"), I can just write $
-  const container = $(".media-player");
-  const videoElement = $("video");
-  const largePlay = $(".large-circle-button");
-  const videoName = $("#video-name");
-  const myVideo = $("#my-video");
-  const videoTime = $("#video-time");
-  const progressBar = $("#progress-bar-fill");
+
+  const container = document.querySelector(".media-player");
+  const videoElement = document.querySelector("video");
+  const largePlay = document.querySelector(".large-circle-button");
+  const videoName = document.querySelector("#video-name");
+  const myVideo = document.querySelector("#TickingAway");
+  const videoTime = document.querySelector("#video-time");
+  const progressBar = document.querySelector("#progress-bar-fill");
+  const firstVideoButton = document.querySelector("#first-video-btn");
+   const secondVideoButton = document.querySelector("#second-video-btn");
   console.log(container);
+
+  firstVideoButton.addEventListener("click", function playIt() {
+    myVideo.pause();
+    playVideo(0);
+  });
+ 
+secondVideoButton.addEventListener("click", function playIt() {
+  myVideo.pause();
+  playVideo(1);
+});
+
+  myVideo.addEventListener("timeupdate", updateProgressBar);
+ 
 
   // large play is the defined term I used to describe the giant play button on the screen.
   // This signifies that when I click the video on the screen in general, the video plays or pauses
@@ -50,21 +65,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     });
   };
+
 });
 
-function playVideo(no) {
-  myVideo.src = videoList[no].link;
-  videoName.textContent = videoList[no].name;
-  // myVideo.load();
-  // myVideo.play();
+function updateProgressBar() {
+  videoTime.textContent = myVideo.currentTime.toFixed(2);
+  const value = (myVideo.currentTime / myVideo.duration) * 100;
+  progressBar.style.width = value + "%";
 }
-
-
-const modal = $("#modal")
-const openModal = $(".open-button")
-const closeModal = $(".close-button")
-
-openmodel.addEventListener('click', () => {
-  modal.showModal();
-})
-

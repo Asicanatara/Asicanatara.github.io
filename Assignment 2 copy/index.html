@@ -1,0 +1,160 @@
+<!-- For this assignment I chose a more creative outlet. 
+Instead of the ones chosen for us by the university I chose to go off on my own and design a media player relating to a game inspired music mix
+Here are my rationale behind the semantics of the code
+
+
+I wanted the media player to take up a majority of the screen with lyrics to the side and sticky images to the other side
+With the controls being in the video player itself.
+
+To achieve this I went with a flex layout and and a sticky key function to keep the image in place when scrolling. -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>VCT Cinematic 2023</h1>
+  </header>
+
+  <!-- navigation to the homepage (The assignment) and the original play Valorant site-->
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="https://playvalorant.com/en-us/">Play Valorant</a></li>
+      <li><a href="https://www.youtube.com/@valorant">Main Channel</a></li>
+      <li><a href="https://www.riotgames.com/en">Riot Games</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main class container-->
+  <main class="container">
+    <!-- Media Player Section -->
+    <div class="media-player">
+      <video id="TickingAway"> 
+        <source src="TickingAway.mp4" type="video/mp4" />
+        Your browser does not support the video tag
+      </video>
+      <section class="video-list">
+        <!-- We use buttons, whenever user clicks on them, the correspoding 
+        video will be played  -->
+        <button id="first-video-btn">
+          <img id="first-video-img" src="" alt="TickingAway">
+        </button>
+        <button id="second-video-btn">
+          <img id="second-video-img" src="" alt="DieForYou">
+        </button>
+      </section>
+      <!--naming this initial controls as this is the primary source of function I'd like in this project-->
+      <div class="initial-controls">
+        <!-- A large circle button that will feature in the center of the media player-->
+        <div class="large-circle-button">
+          <img id="play-pause-img" src="https://img.icons8.com/ios-glyphs/30/play--v1.png" alt="Play Button" width="40"
+            height="40" />
+        </div>
+        <p>Click to view cinematic</p>
+      </div>
+      <div class="progress-bar">
+        <span id="progress-bar-fill"></span>
+      </div>
+      <section class="video-title">
+        <h1>Now Playing: <span id="video-name"></span></h1>
+        <h1>Current playtime: <span id="video-time">1.62</span></h1>
+      </section>
+    
+    </div>
+
+    <!-- Additional Content Section -->
+
+    <!-- creating a split area for lyrics of the music video-->
+    <!--Included is an image of one of the Agents included in the Game and music video "Gekko" He will be featured to the side of the lyric box-->
+    <section class="lyrics"> 
+      <img src="BBGEK.png" alt="StickyGek" />
+
+        <h2>Lyrics</h2>
+        <p class="lyric-spacing">
+          <span>I need to keep you around, with my feet tied </span>
+          <span>With my feet tied tight to the ground</span>
+          <span>The end's nowhere to be found, I don't know why</span>
+          <span>You don't leave me to drown, oh, oh, oh</span>
+
+          <span>Don't know where to go unless you say</span>
+
+          <span>Don't know what to do unless you stay</span>
+
+          <span>Thinking that today will be our day</span>
+
+          <span>Be our day again</span>
+
+          <br />
+
+          <span> Why am I playing with time as it's ticking away?</span>
+          <span> It's tickin' away, away, I'm asking</span>
+          <span> Why we run for our lives, not a second to waste?</span>
+          <span> You're tickin' away, away, away</span>
+          <br />
+          <span>Alright, let's get it</span>
+          <span>
+            Winnin' (winnin'), losin' (losin'), either way I'm there</span>
+          <span>Gotta attitude, I'm out the roof up in the air</span>
+          <span>
+            This round I make it count, yeah, I'm talkin' right now</span>
+          <span>Feel like the comeback kid, I got no time to spare</span>
+          <br />
+          <span>Woah, double up the score, turn a two to a four</span>
+          <span>You know I win a lot, gotta win one more</span>
+          <span>On a hot streak, never gets old</span>
+          <span>Solo with the ace, and my team went gold</span>
+          <br />
+          <span>Why am I playing with time as it's ticking away?</span>
+          <span>It's tickin' away, away, I'm asking</span>
+          <span>Why we run for our lives, not a second to waste?</span>
+          <span>You're tickin' away, away, away</span>
+          <br />
+          <span>You're ticking away, away, away</span>
+          <br />
+          <span>You're ticking away, away</span>
+          <br />
+          <span>I'll give it one more try</span>
+          <span>I don't know why, but I keep coming back every time</span>
+          <span>I want it more than my life</span>
+          <span>I don't know why, but it feels so right</span>
+          <br />
+          <span>Why am I playing with time as it's ticking away?</span>
+          <span>It's tickin' away, away, I'm asking</span>
+          <span>Why we run for our lives, not a second to waste?</span>
+          <span>It's tickin' away, away, away</span>
+          <br />
+          <span>It's ticking away, away, away</span>
+          <br />
+          <span>Ticking away, away, away</span>
+        </p>
+
+      </div>
+      <br>
+
+
+
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Media Player Website. All rights reserved.</p>
+    <p>© 2024 Riot Games. All rights reserved.</p>
+    <p>Song by Valorant, bbno$ and Grabbitz</p>
+    <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+    <a href="https://icons8.com">Icons8</a>
+    <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+    <a href="https://icons8.com">Icons8</a>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+
+</html>

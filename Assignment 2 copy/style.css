@@ -1,0 +1,267 @@
+/* https://www.youtube.com/watch?v=zHZRFwWQt2w
+Kevin Powell had some major influence on this webpage */
+
+/* For the overall design I wanted to keep it somewhat simple yet very distinguisable.
+Using the premade CSS script I incorporated my own adaptations and alterations to create a more game design friendly aspect
+This was done using images as background with a "Background-image" element and a "background-position" alteration so that it would fit nice and easily on the page.
+As for the colour scheme I used a white and goldish hue on each of the text fonts.*/
+:root {
+  --primary-bg-color: #393939;
+  --text-color: #545646;
+  --main-bg-color: #333;
+  --main-text-color: #fff;
+  --main-btn-bg-color: #602323; 
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Models the body so it's neat and not so out of order*/
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(Wacky\ backdropr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  
+}
+
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    
+}
+
+h2 {
+  size: 20rem;
+  color: #d9d980;
+}
+
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    color: #eeee88;
+}
+
+/* Container holding the entirety of the media player needs to be sorted out and centralised.
+I've made it so that it's 800px wide with a 20px padding around it.*/
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+/*The heading looked boring without a design, so in Photoshop I created a base image that originated from a Valorant Design then blended it to a VCT theme.
+I then centralized the text and made it big and bold*/
+header {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  width: 100%;
+  background-image: url(wap.png);
+  background-size: inherit;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+/*simple navigation that leads to my home page then as a dedication to the game I referenced the original page for Valorant and the YouTube Channel*/
+nav {
+  margin-top: 20px;
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fdf1ab;
+}
+
+/* Custom dimensions for the media player*/
+.media-player {
+  width: 100%;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.media-player video {
+  max-width: 100%;
+  position: sticky;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.custom-controls button {
+  background-color: var(--main-btn-bg-color);
+  color: var(--main-text-color);
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #f68967;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+footer {
+  background-image: url(waka.png);
+  color: #d9d980;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(161, 196, 101);
+}
+
+video {
+  width: 100%;
+
+}
+
+
+
+nav ul {
+  display: flex;
+  gap: 4em;
+  list-style: none;
+  padding-left: 0;
+}
+
+.media-player {
+  position: relative;
+  margin: 4em 0px;
+}
+
+.media-player video {
+  border-radius: 0.5em;
+}
+
+/* When the video is idle the "initial-controls" are idle and will remain on the screen until interacted with */
+/* this controls the roundness, size and over  */
+.initial-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s;
+  color: white;
+}
+/* Click to play text*/
+
+/* when the video plays the "initial-controls" disappear and the video plays normally */
+[is-playing] .initial-controls {
+  opacity: 0;
+  pointer-events: none;
+}
+/* creates a large clickable circle in the inner media player */
+.large-circle-button {
+  width: 80px;
+  height: 80px;
+  background: #fdf1ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* When hovering the button shrinks in scale by .95*/
+.large-circle-button:hover {
+  scale: 0.95;
+}
+
+/* This acts as a transition so the play button disappears and scales up after being pressed */
+[is-playing] .large-circle-button {
+  opacity: 0;
+  scale: 4;
+}
+
+
+p {
+  color: #fdf1ab;
+}
+
+button {
+  color:#d9d980;
+  background-color: #000000;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+button:hover {
+  background-color:#1d180e;
+}
+.lyrics{
+  background-color: #111111ec;
+  border: 1px solid black;
+  padding: 2em;
+  border-radius: 10ex;
+  position: relative;
+}
+.lyrics img{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 20pc;
+  opacity: 50%;
+}
+.lyric-spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}

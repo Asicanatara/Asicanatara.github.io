@@ -6,11 +6,11 @@ Using the premade CSS script I incorporated my own adaptations and alterations t
 This was done using images as background with a "Background-image" element and a "background-position" alteration so that it would fit nice and easily on the page.
 As for the colour scheme I used a white and goldish hue on each of the text fonts.*/
 :root {
-  --primary-bg-color: #887e7e;
-  --text-color: #000000;
+  --primary-bg-color: #393939;
+  --text-color: #545646;
   --main-bg-color: #333;
   --main-text-color: #fff;
-  --main-btn-bg-color: #602323;
+  --main-btn-bg-color: #602323; 
 }
 
 ul {
@@ -18,6 +18,7 @@ ul {
   padding: 0;
 }
 
+/* Models the body so it's neat and not so out of order*/
 body {
   font-family: "Arial", sans-serif;
   background-color: var(--primary-bg-color);
@@ -27,10 +28,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-image: url(Wacky\ backdrop.png);
+  background-image: url(Wacky\ backdropr.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
+  
 }
 
 h1 {
@@ -47,19 +49,19 @@ h2 {
 h3 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-    color: #d9d980;
+    color: #eeee88;
 }
 
+/* Container holding the entirety of the media player needs to be sorted out and centralised.
+I've made it so that it's 800px wide with a 20px padding around it.*/
 .container {
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
 }
 
+/*The heading looked boring without a design, so in Photoshop I created a base image that originated from a Valorant Design then blended it to a VCT theme.
+I then centralized the text and made it big and bold*/
 header {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
@@ -72,11 +74,11 @@ header {
   background-position: 50%;
   background-repeat: no-repeat;
 }
-
+/*simple navigation that leads to my home page then as a dedication to the game I referenced the original page for Valorant and the YouTube Channel*/
 nav {
   margin-top: 20px;
-  text-align: center;
-  background-color: transparent;
+  background-color: rgb(35, 35, 35);
+  border-radius: 10px;
 }
 
 nav ul {
@@ -87,6 +89,8 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
 }
 
 nav a {
@@ -94,6 +98,7 @@ nav a {
   color: #fdf1ab;
 }
 
+/* Custom dimensions for the media player*/
 .media-player {
   width: 100%;
   flex-shrink: 0;
@@ -151,17 +156,15 @@ footer {
 
 a {
   text-decoration: none;
-  color: rgb(255, 0, 0);
+  color: rgb(161, 196, 101);
 }
 
 video {
   width: 100%;
-  scroll-behavior: sticky;
+
 }
 
-.lyrics {
-  flex-shrink: 0;
-}
+
 
 nav ul {
   display: flex;
@@ -177,7 +180,6 @@ nav ul {
 
 .media-player video {
   border-radius: 0.5em;
-  scroll-behavior: sticky;
 }
 
 /* When the video is idle the "initial-controls" are idle and will remain on the screen until interacted with */
@@ -227,24 +229,39 @@ nav ul {
   scale: 4;
 }
 
-#box1 {
-  width: auto;
-  height: auto;
-  background-color: #3c3b3b;
-  padding: 20px;
-  transition: all 0.3s ease;
-}
-
-#box {
-  width: auto;
-  height: auto;
-}
 
 p {
   color: #fdf1ab;
 }
 
-.modal {
-  padding: 1em;
-  max-width: 50px;
+button {
+  color:#d9d980;
+  background-color: #000000;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  font-variant: small-caps;
+  cursor: pointer;
+}
+button:hover {
+  background-color:#1d180e;
+}
+.lyrics{
+  background-color: #111111ec;
+  border: 1px solid black;
+  padding: 2em;
+  border-radius: 10ex;
+  position: relative;
+}
+.lyrics img{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  left: 20pc;
+  opacity: 50%;
+}
+.lyric-spacing {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
