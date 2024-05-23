@@ -39,7 +39,8 @@ button {
   background-color: bisque;
   border-radius: 25px;
   cursor: pointer;
-  transition: background-image 0.3s ease scale 0.3s ease rotate 0.3s ease;
+  transition: opacity background-image 0.3s ease scale 0.3s ease rotate 0.3s
+    ease;
 }
 button:hover {
   background-image: url(images.jpeg);
@@ -47,6 +48,7 @@ button:hover {
   scale: 0.9;
   rotate: 20deg;
   translate: 10px;
+  opacity: 1px;
 }
 
 input {
@@ -68,4 +70,171 @@ input:focus {
 
 .fill-icon:hover {
   fill: green;
+}
+
+.duck-icon {
+  animation-name: bounce;
+  animation-duration: 0px 0px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.box {
+  background-color: purple;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: border-switch;
+  /* animation-name: color-switch; */
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-width: 5px;
+}
+
+.spinner {
+  width: 120px;
+  height: 120px;
+  /* background-color: white; */
+  border: 6px solid #1b0303;
+  border-top-color: rgb(0, 238, 255);
+  border-radius: 50%;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.icon {
+  animation: bounce 2s infinite;
+}
+
+.heart-icon {
+  animation: heartbeat 4s infinite;
+}
+
+#side-drawer {
+  position: fixed;
+  width: 200px;
+  background-color: aqua;
+  height: 100vh;
+  top: 0;
+  left: -200px;
+  transition: translate 0.5s linear;
+}
+@keyframes heartbeat {
+  0% {
+    scale: 1;
+  }
+  20% {
+    scale: 0.9;
+  }
+  40% {
+    scale: 0.5;
+  }
+  50% {
+    scale: 0.8;
+  }
+  70% {
+    scale: 0.9;
+  }
+  90% {
+    scale: 0.7;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes color-switch {
+  0% {
+    background-color: purple;
+  }
+  10% {
+    background-color: rgb(201, 0, 201);
+  }
+  20% {
+    background-color: rgb(196, 0, 95);
+  }
+  30% {
+    background-color: rgb(201, 2, 88);
+  }
+  40% {
+    background-color: rgb(247, 0, 53);
+  }
+  50% {
+    background-color: rgb(255, 174, 0);
+  }
+  60% {
+    background-color: rgb(255, 0, 0);
+  }
+  70% {
+    background-color: rgb(247, 0, 53);
+  }
+  80% {
+    background-color: rgb(201, 2, 88);
+  }
+  90% {
+    background-color: (201, 0, 201);
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+@keyframes border-switch {
+  0% {
+    background-color: purple;
+  }
+  10% {
+    background-color: rgb(201, 0, 201);
+  }
+  20% {
+    background-color: rgb(196, 0, 95);
+  }
+  30% {
+    background-color: rgb(201, 2, 88);
+  }
+  40% {
+    background-color: rgb(247, 0, 53);
+  }
+  50% {
+    background-color: rgb(255, 174, 0);
+  }
+  60% {
+    background-color: rgb(255, 0, 0);
+  }
+  70% {
+    background-color: rgb(247, 0, 53);
+  }
+  80% {
+    background-color: rgb(201, 2, 88);
+  }
+  90% {
+    background-color: (201, 0, 201);
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    translate: 0px 0ppx;
+  }
+  50% {
+    translate: 5px 5ppx;
+  }
+  100% {
+    translate: 10px 10ppx;
+  }
 }
