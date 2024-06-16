@@ -16,6 +16,7 @@
 
 html {
   color-scheme: dark light; /* Default dark */
+  scroll-behavior: smooth;
 }
 
 body {
