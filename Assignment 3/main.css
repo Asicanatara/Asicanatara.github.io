@@ -28,8 +28,8 @@ but regardless it didn't matter due to flexing and margins. */
 h1{
     margin: 150px;
     margin-top: 300px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 150px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,9 +44,11 @@ h2 {
     display:flex;
 
 }
-nav{
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.2)
+h3{
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
+
 nav ul {
     position: relative;
     height: 70px;
@@ -56,19 +58,30 @@ nav ul {
     display: flex;
     justify-content: flex-end;
 }
+.nav ul.dropdown ul{
+    width: 5%;
+    margin-bottom: 40px;
+    color: #262626;
+}
+
+
 
 nav li{
-    height: 50px;
+    position:relative;
 }
 
 nav ul li {
     position: relative;
+    width: 100%;
+    list-style-type: none;
+ 
+   
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 20px 20px;
     display: block;
 }
 
@@ -83,12 +96,25 @@ nav ul li a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #777777;
-    min-width: 160px;
+    background: #575757;
+    left: 0;
+    top: 100%;
+    width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding: 20px;
+    justify-content: space-between;
+}
+.box1 {
+    background: #575757;
+    position: absolute;
+    display: block;
+    height: 80px;
 }
 
+.box1 ul li a{
+    color:#000000
+}
 .dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
@@ -118,7 +144,7 @@ nav ul li a:hover {
     height: 900px;
     background-position: center;
     background-size: cover;
-    background-image:url(banner-2.jpg);
+    background-image:url(Screenshot\ 2024-06-17\ 003841.png);
     background-attachment: fixed;
 }
 .godhome{
@@ -127,6 +153,14 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     background-image:url(hollow-knight_dlc-1024x576.jpeg);
+    background-attachment: fixed;
+}
+.Grimm{
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-image:url(wp4265395.webp);
     background-attachment: fixed;
 }
 
@@ -150,7 +184,7 @@ nav a {
     font-size: larger;
 }
 nav a:hover{
-    scale: 1.1;
+    scale: 1.04;
 }
 .dropimg {
 width: 10px;
@@ -172,6 +206,18 @@ vertical-align: middle;
    scale:0.9;
 }
 
+
+
+.hollow {
+    margin: auto;
+    text-align: center;
+    background-image: url(thumb-1920-985300.jpg);
+    width: 100%;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 @keyframes loading {
     0% {
