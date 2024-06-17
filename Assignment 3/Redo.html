@@ -11,28 +11,24 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
-
-  
-
-
-
-
     <!-- New Attempt -->
      <!-- In this attempt I aim to create a large mega menu that consists of multiple columns of navigational links
       each of these links will go towards different sites on the interweb and hopefully create a more interactive feel. -->
   <nav>
     <div class="wrapper">
         <!-- Creating an anchor point for the logo of Team Cherry this acts as a link to the official blogging website -->
-        <a href=""><img class="Cherry" src="Team_cherry_Logo_Red.png"></a>
-        <!--  -->
+        <a href="#"><img class="Cherry" src="Team_cherry_Logo_Red.png"></a>
+        <!-- Team Cherry text, classed it as a logo for CSS intervention. -->
         <div class="logo"><a href="#">Team Cherry</a></div>
+        <!-- "a radio button is an interactive page element for selecting one option from multiple options". This is incorporated here to help with the
+         functionality of the responisive navigation system.-->
         <input type="radio" name="slider" id="menu-btn">
         <input type="radio" name="slider" id="close-btn">
+        <!--  -->
         <ul class="nav-links">
             <label for="close-btn" class="close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="https://www.teamcherry.com.au/">Official Website</a></li>
+            <li><a href="https://www.teamcherry.com.au/about">About</a></li>
             <li>
                 <a href="#" class="desktop-item">Places to Purchase!<img class="dropimg" src="white-down-arrow-png-2.png"></a>
                 <input type="checkbox" id="showDrop">
@@ -44,62 +40,64 @@
                     <li><a href="https://www.xbox.com/en-AU/games/store/hollow-knight-voidheart-edition/9mw9469v91lm?ocid=storeforweb">HK: Microsoft</a></li>
                 </ul>
             </li>
+            <!-- The setup for the drop down box -->
             <li>
                 <a href="#" class="desktop-item">Map of Hallowsnest<img class="dropimg" src="white-down-arrow-png-2.png"></a>
+                <!-- Everything that is divided into rows and mega-box's etc. have an assigned use. Each one has it's own class
+                 and each class has been into it's own tags.-->
+                 <!-- So I have, mobile-item, mega-box, content, row and mega-links -->
                 <input type="checkbox" id="showMega">
                 <label for="showMega" class="mobile-item">Hallowsnest</label>
                 <div class="mega-box">
                     <div class="content">
                         <div class="row">
-                            <header><h4>Hallowsnest</h4></header>
+                                <img src="unnamed.jpg" alt="#">
+                            </div>
+                        <div class="row">
                             <ul class="mega-links">
                                 <li><a href="https://hollowknight.fandom.com/wiki/Abyss">Abyss</a></li>
-                                <li><a href="#">Anceient Basin</a></li>
-                                <li><a href="#">City of Tears</a></li>
-                                <li><a href="#">Colosseum of Fools</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Ancient_Basin">Anceient Basin</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/City_of_Tears">City of Tears</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Colosseum_of_Fools">Colosseum of Fools</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Crystal_Peak">Crystal Peak</a></li>
                             </ul>
                         </div>
                         <div class="row">
                             <ul class="mega-links">
-                                <li><a href="#">Crystal Peak</a></li>
-                                <li><a href="#">Deepnest</a></li>
-                                <li><a href="#">Dirtmouth</a></li>
-                                <li><a href="#">Fog Canyon</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Deepnest">Deepnest</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Dirtmouth">Dirtmouth</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Fog_Canyon">Fog Canyon</a></li>
+                                 <li><a href="https://hollowknight.fandom.com/wiki/Forgotten_Crossroads">Forgotten Crossroads</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Fungal_Wastes">Fungal Wastes</a></li>
                             </ul>
                         </div>
                         <div class="row">
                             <ul class="mega-links">
-                                <li><a href="#">Forgotten Crossroads</a></li>
-                                <li><a href="#">Fungal Wastes</a></li>
-                                <li><a href="#">Godhome</a></li>
-                                <li><a href="#">Greenpath</a></li>
+                               <li><a href="https://hollowknight.fandom.com/wiki/Godhome">Godhome</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Greenpath">Greenpath</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Hive">Hive</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Howling_Cliffs">Howling Cliffs</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Kingdoms_Edge">Kingdoms Edge</a></li>
                             </ul>
                         </div>
                         <div class="row">
                             <ul class="mega-links">
-                                <li><a href="#">Hive</a></li>
-                                <li><a href="#">Howling Cliffs</a></li>
-                                <li><a href="#">Kingdoms Edge</a></li>
-                                <li><a href="#">Queens Gardens</a></li>
-                            </ul>
-                        </div>
-                        <div class="row">
-                            <ul class="mega-links">
-                                <li><a href="#">Resting Grounds</a></li>
-                                <li><a href="#">Royal Waterways</a></li>
-                                <li><a href="#">White Palace</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Queens_Gardens">Queens Gardens</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Resting_Grounds">Resting Grounds</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/Royal_Waterways">Royal Waterways</a></li>
+                                <li><a href="https://hollowknight.fandom.com/wiki/White_Palace">White Palace</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </li>
-            <li><a href="#">Feedback</a></li>
         </ul>
         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
     </div>
   </nav>
 
-
+<!-- So for site design's sake I wanted to experiment with containers and the overall fixed imagery on a page.
+ So out of interest I created division classes mixed with H1 and assigned different tags to them -->
 <div class="hollow" id="hollow">
     <h1>Hollow Knight</h1>
 </div>
@@ -124,17 +122,13 @@
 <div class="Silkcontainer" id="SilkSong">
     <h1>Hollow Knight 2: Silksong</h1>
 </div>
-
-            
-             
-               
-
-
-
-
 </header>
 
-
-
-
+<!-- I've said it once and I'll say it again, this is not my game not my content, only my constructed website so all rights go to the amazing people at Team Cherry. -->
+<footer>
+    <h2>All rights belong to Team Cherry and the amazing team behind the games of Hollow Knight and Silksong.</h2>
+    <h2>Wherever it may be...</h2>
+</footer>
+<!-- If you see this be sure to say Hi! 
+ Also thank you for teaching us this semester!-->
 </html>
